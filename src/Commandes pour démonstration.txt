@@ -1,0 +1,16 @@
+# Répertoire de travail
+os.getcwd()
+
+# Démonstration
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/00_init_env.py").read())
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/01_build_model.py").read())
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/02_evaluation_model.py").read())
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/03_extract_img.py").read())
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/04_detect_video.py").read())
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/05_send_mail.py").read())
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/06_demo_detection.py").read())
+
+# Démonstration
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/02_demo_detection.py").read())
+exec(open("C:/Users/33675/Documents/Professionel/Talan/Projets/Veolia/application/scripts/03_detect_video.py").read())
+

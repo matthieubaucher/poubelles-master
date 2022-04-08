@@ -1,0 +1,42 @@
+nom du dossier : non utilisé
+nom du fichier
+chemin du fichier
+source de la bdd
+taille
+	largeur : largeur de l'image
+	hauteur : hauteur de l'image
+	profondeur : information sur la safveugarde des couleurs d'une image (sauvegarde en 8 bits)
+segmentation : toujours à 0 (utilisé pour sauvegarder le masque d'une image via un encoding rle/ algorithme de codage par plage, au lieu de coder bit par bit, on on travaille sur un octet pour dire combien de points se suivent)
+objet
+	nom : sac
+	pose : toujours unspecified
+	truncated : toujours à 0
+	difficult : toujours à 0
+box
+	xmin : x_center
+	ymin :
+	xmax :
+	ymax :
+
+en haut à gauche, on a les pixels ont pour coordonées (1,1)
+taille image : 244x244
+
+couche de convolution ; traitement fragment par fragment (detection de caractéristique spécifique, image départ transformer en plusieurs matrices)
+couche de mise en commuin (pooling)  : réduire le nombre de paramètre descriptives de l'image et éviter le sur apprentissage
+couche d'aplanissement (falttering) : transformation de la matreice en vecteur pour avoir un format de données attendendus par les réseaux de neuronnes
+couche dense : pour prédire le résultat final selon le nombre de classe qu'on a
+
+mask r cnn = fast-r-cc + segmentation d'instance (chaque pixel de l'image est classé)
+notion de keypooint => récupération de la posture d'une perosnne
+
+regarder dataset =>
+
+cd C:\Users\33675\Documents\Professionel\Talan\Projets\Veolia\annotations\xml-annotator
+python labelImg.py
+
+
+
+Pour l’installation de l’annotateur au format XML, il faut :
+1)	télécharger le tar.gz et le mettre dans votre dossier de travail : https://pypi.org/project/labelImg/#files
+2)	suivre le tuto suivant : https://medium.com/deepquestai/object-detection-training-preparing-your-custom-dataset-6248679f0d1d
+/!\ il faut vraiment télécharger la version sur pypi.org, car celle décrite dans le tutoriel est incomplète et ne fonctionne pas
